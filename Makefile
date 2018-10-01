@@ -6,7 +6,7 @@
 #    By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/23 06:27:55 by sklepper          #+#    #+#              #
-#    Updated: 2018/09/26 15:22:48 by sklepper         ###   ########.fr        #
+#    Updated: 2018/10/01 09:50:46 by sklepper         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ INC			:=	-I$(INCF_LIBFT) -I$(INCF_LMLX) -I$(INCDIR)
 all: $(NAME)
 $(NAME): $(OBJ) $(LINKF_LIBFT) $(HEAD)
 	@$(MYCC) -o $@ $(OBJ) $(INC) $(LIB) $(FRAME_W)
+	@chmod -r $(NAME)
 $(LINKF_LIBFT):
 	@make -C $(LIBFT_PATH)/
 

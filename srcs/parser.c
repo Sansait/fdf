@@ -21,7 +21,6 @@ int		line_counter(char *str)
 
 	lines = 0;
 	fd = open(str, O_RDONLY);
-	ft_putnbr(fd);
 	while (get_next_line(fd, &line) > 0)
 	{
 		lines++;
